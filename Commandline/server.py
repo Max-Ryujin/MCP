@@ -11,7 +11,7 @@ mcp_server = FastMCP("Commandline")
   
 @mcp_server.tool()  
 def commandline_tool(command: str, timeout: Optional[int] = 60, working_dir: Optional[str] = None) -> str:  
-    """A command line tool that runs a command and returns the output."""  
+    """A command line tool that runs a command and returns the output.(Windows)"""  
     """Adds timeout and working directory support for better safety and flexibility."""  
     logger.info(f"Running command: {command}")  
     try:  
